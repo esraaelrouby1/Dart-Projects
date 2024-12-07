@@ -69,12 +69,15 @@ void main() {
 
   // Display summary
   print("\n Student Summary\n");
+
   for (var student in students) {
     print("Name: ${student['name']}");
     print("Scores:");
-    (student['scores'] as Map<String, double>).forEach((subject, score) {
-      print("  $subject: $score");
-    });
+//
+  for (var subject in student['scores'].keys) {
+  print("  $subject: ${student['scores'][subject]}");
+}
+    
     print("Total Score: ${student['total']}");
     print("Average Score: ${student['average'].toStringAsFixed(2)}");
     print("Grade: ${student['grade']}\n");
