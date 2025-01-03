@@ -69,6 +69,6 @@ void main() {
   car2.accelerate(30);
   car2.printCarInfo();
 
-  car2.decelerate(40); // Test edge case where speed goes to 0
+  car2.decelerate(40); // Test  case where speed goes to ==> zero
   car2.printCarInfo();
 }
